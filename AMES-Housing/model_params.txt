@@ -1,0 +1,30 @@
+gs_kn_predictions_1107.csv
+{'grid': GridSearchCV(cv=None, error_score='raise',
+       estimator=KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=5, p=2,
+           weights='uniform'),
+       fit_params={}, iid=True, n_jobs=1,
+       param_grid={'n_neighbors': [3, 6, 9]}, pre_dispatch='2*n_jobs',
+       refit=True, return_train_score=True, scoring=None, verbose=0), 'scalar': StandardScaler(copy=True, with_mean=True, with_std=True), 'skb__k': 30}
+
+
+gs_predictions_1108.csv
+{'grid': GridSearchCV(cv=None, error_score='raise',
+       estimator=KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=5, p=2,
+           weights='uniform'),
+       fit_params={}, iid=True, n_jobs=1,
+       param_grid={'n_neighbors': [3, 6, 9]}, pre_dispatch='2*n_jobs',
+       refit=True, return_train_score=True, scoring=None, verbose=0), 'scalar': StandardScaler(copy=True, with_mean=True, with_std=True), 'skb__k': 20}
+{'n_neighbors': 6}
+
+
+Parameters used: Index(['Overall Qual', 'Year Built', 'Year Remod/Add', 'Exter Qual',
+       'Bsmt Qual', 'Heating QC', 'Garage Finish', 'Garage Cars',
+       'Garage Qual', 'Garage Cond', 'MS Zoning_C (all)', 'MS Zoning_RH',
+       'Neighborhood_IDOTRR', 'Condition 2_Artery', 'Exterior 1st_Stone',
+       'Foundation_PConc', 'Central Air_N', 'Central Air_Y', 'Sale Type_COD',
+       'Garage Age'],
+      dtype='object')
+
+
