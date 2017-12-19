@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.11)  18 DEC 2017 16:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.11)  19 DEC 2017 00:54
 entering extended mode
 **./Capstone_Report.tex
 (Capstone_Report.tex
@@ -270,58 +270,109 @@ Overfull \hbox (30.5914pt too wide) in paragraph at lines 75--76
 File: ranked_df_heatmap.png Graphic file (type png)
 
 <use ranked_df_heatmap.png>
-Package pdftex.def Info: ranked_df_heatmap.png used on input line 85.
+Package pdftex.def Info: ranked_df_heatmap.png used on input line 87.
 (pdftex.def)             Requested size: 569.05511pt x 406.47363pt.
 
-Overfull \hbox (99.30013pt too wide) in paragraph at lines 85--86
+Overfull \hbox (99.30013pt too wide) in paragraph at lines 87--88
 [][] 
  []
 
-<pairplot.png, id=17, 1987.425pt x 1987.425pt>
-File: pairplot.png Graphic file (type png)
- <use pairplot.png>
-Package pdftex.def Info: pairplot.png used on input line 91.
-(pdftex.def)             Requested size: 1987.42017pt x 1987.42017pt.
- [3 <./market_price_hist.png> <./market_year_hist.png>]
-<market_svd.png, id=24, 433.62pt x 289.08pt>
+[3 <./market_price_hist.png> <./market_year_hist.png>]
+<market_svd.png, id=23, 433.62pt x 289.08pt>
 File: market_svd.png Graphic file (type png)
  <use market_svd.png>
-Package pdftex.def Info: market_svd.png used on input line 101.
+Package pdftex.def Info: market_svd.png used on input line 103.
 (pdftex.def)             Requested size: 284.52756pt x 189.69504pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 106.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 108.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 106.
-
-Underfull \hbox (badness 10000) in alignment at lines 112--169
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 108.
+ [4 <./ranked_df_heatmap.png>]
+Underfull \hbox (badness 10000) in alignment at lines 114--171
 [][]
  []
 
-[4 <./ranked_df_heatmap.png>] [5] [6 <./pairplot.png>] [7 <./market_svd.png>]
-[8] (Capstone_Report.aux) ) 
+<top_features_targets.png, id=29, 1084.05pt x 361.35pt>
+File: top_features_targets.png Graphic file (type png)
+
+<use top_features_targets.png>
+Package pdftex.def Info: top_features_targets.png used on input line 183.
+(pdftex.def)             Requested size: 469.75499pt x 156.58498pt.
+ [5 <./market_svd.png>]
+<market_rating_avgtime.png, id=34, 433.62pt x 289.08pt>
+File: market_rating_avgtime.png Graphic file (type png)
+
+<use market_rating_avgtime.png>
+Package pdftex.def Info: market_rating_avgtime.png used on input line 195.
+(pdftex.def)             Requested size: 225.48038pt x 150.32245pt.
+
+<market_rating_hist.png, id=35, 433.62pt x 289.08pt>
+File: market_rating_hist.png Graphic file (type png)
+
+<use market_rating_hist.png>
+Package pdftex.def Info: market_rating_hist.png used on input line 199.
+(pdftex.def)             Requested size: 225.48038pt x 150.32245pt.
+
+<market_id_year.png, id=36, 419.5675pt x 266.9975pt>
+File: market_id_year.png Graphic file (type png)
+ <use market_id_year.png>
+Package pdftex.def Info: market_id_year.png used on input line 208.
+(pdftex.def)             Requested size: 419.56647pt x 266.99683pt.
+File: market_rating_avgtime.png Graphic file (type png)
+
+<use market_rating_avgtime.png>
+Package pdftex.def Info: market_rating_avgtime.png used on input line 216.
+(pdftex.def)             Requested size: 225.48038pt x 150.32245pt.
+File: market_rating_hist.png Graphic file (type png)
+ <use market_rating_hist.png>
+Package pdftex.def Info: market_rating_hist.png used on input line 220.
+(pdftex.def)             Requested size: 225.48038pt x 150.32245pt.
+ [6 <./top_features_targets.png> <./market_rating_avgtime.png> <./market_rating
+_hist.png>]
+[7 <./market_id_year.png>] <svd_price_2d.png, id=49, 690.58pt x 477.785pt>
+File: svd_price_2d.png Graphic file (type png)
+
+<use svd_price_2d.png>
+Package pdftex.def Info: svd_price_2d.png used on input line 239.
+(pdftex.def)             Requested size: 230.18251pt x 159.25154pt.
+ <svd_price_3d.png, id=50, 426.393pt x 343.2825pt>
+File: svd_price_3d.png Graphic file (type png)
+
+<use svd_price_3d.png>
+Package pdftex.def Info: svd_price_3d.png used on input line 243.
+(pdftex.def)             Requested size: 230.18251pt x 185.31216pt.
+ <svd_clusters.png, id=51, 867.24pt x 578.16pt>
+File: svd_clusters.png Graphic file (type png)
+
+<use svd_clusters.png>
+Package pdftex.def Info: svd_clusters.png used on input line 250.
+(pdftex.def)             Requested size: 469.75499pt x 313.17216pt.
+ [8 <./svd_price_2d.png> <./svd_price_3d.png>] [9 <./svd_clusters.png>] [10] (C
+apstone_Report.aux) ) 
 Here is how much of TeX's memory you used:
- 3774 strings out of 493634
- 53604 string characters out of 3141314
+ 3808 strings out of 493634
+ 54400 string characters out of 3141314
  118889 words of memory out of 3000000
- 7128 multiletter control sequences out of 15000+200000
- 11054 words of font info for 42 fonts, out of 3000000 for 9000
+ 7155 multiletter control sequences out of 15000+200000
+ 12005 words of font info for 45 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 36i,9n,38p,1227b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb>
-Output written on Capstone_Report.pdf (8 pages, 768843 bytes).
+ 36i,9n,38p,1227b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.p
+fb>
+Output written on Capstone_Report.pdf (10 pages, 625844 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
+ 90 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

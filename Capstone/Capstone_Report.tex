@@ -79,22 +79,24 @@ The first step was to parse the market data into a usable form; the data coming 
 
 There were four other features with outliers: year, max\_players, avg\_time, and age. The year column had a massive range as the list of games includes very old game like Go and Backgammon (both "released" over 2000 years ago). To accomodate for this I set a minimum year value of 1950, imputing any values less than that to be 1950. I also created a "Classic" feature that equals 1 for games released before 1900 and 0 for games released after. A similar process was done for the other three columns. For max\_players a maximum cutoff of 20 was set as there are very few games beyong this point and the difference between 20 players and 20+ players isn't that significant. For the avg\_time a maximum cutoff of 480 minutes was used. I used 21 as the uper bound on age as a minimum suggested age beyond that doesn't make sense in terms of maturity/things you are legaly allowed to do (e.g purchase alcohol). There are also some games that have no user reviews on the weight (complexity) of the game and thus have a value of 0 in that column. I imputed this missing data using the median weight of all games for which there was a non-zero weight.
 
-Keeping in mind that the goal of the project is to to able to predict the game rating, which is a proxy of the popularity, of games that are brand new or have no user reviews, any feature tied to user data must be thrown out. For this reason, I droped avg\_rating, num\_votes, numcomments, numweights, owned, trading, wanting, and wishing. I created a column called name\_len that is the number of characters in the game name under the theory that shorter names might be catchier and thus more popular. Once these step were taken, I used a a heatmap to check for colinear features and to get an idea of which features might have the most predictive power (see Fig. 2). The features related to time spent playing the game are all colinear (Pearson correlation coefficient $>$ 0.8). I chose to keep just the avg\_time of those three features. A Seaborn pairplot of the remaining numerical columns is shown in Figure 3. The game ID was left in temporarily so that the results can be matched up after the analysis, but will be removed before being fed into any mdoels.
+Keeping in mind that the goal of the project is to to able to predict the game rating, which is a proxy of the popularity, of games that are brand new or have no user reviews, any feature tied to user data must be thrown out. For this reason, I droped avg\_rating, num\_votes, numcomments, numweights, owned, trading, wanting, and wishing. Also, because the market data consists of secondary market sales listings it is more representative of actual game value or popularity. Instead of using the market price as a feature, I did a separate analysis with it as the target variable instead of rating. 
+
+I created a column called name\_len that is the number of characters in the game name under the theory that shorter names might be catchier and thus more popular. Once these step were taken, I used a a heatmap to check for colinear features and to get an idea of which features might have the most predictive power (see Fig. 2). The features related to time spent playing the game are all colinear (Pearson correlation coefficient $>$ 0.8). I chose to keep just the avg\_time of those three features. I also used a Seaborn pairplot of the remaining numerical columns to look for trends between features and the two target variables as well as any other interesting feature relationships. Some of these plots for the more important features are shown in Fig. 4. The game ID was left in temporarily so that the results can be matched up after the analysis, but will be removed before being fed into any mdoels.
 
 \begin{figure}[ht]
 \includegraphics[width=20cm]{ranked_df_heatmap.png}
-\caption{\small Heatmap of numerical columns showing the Pearson correlation coefficient.}
+\caption{\small Heatmap of numerical columns showing the Pearson correlation coefficients.}
 \end{figure}
 
-\begin{figure}[ht]
-\centering
-\resizebox{\linewidth}{!}{\includegraphics{pairplot.png}}
-\caption{\small Seaborn pairplot of numerical columns.}
-\end{figure}
+%\begin{figure}[ht]
+%\centering
+%\resizebox{\linewidth}{!}{\includegraphics{pairplot.png}}
+%\caption{\small Seaborn pairplot of numerical columns.}
+%\end{figure}
 
 That leaves the four text fields to be dealt with: name, mechanic, category, and designer. Other than the name\_len, no other features were engineered from the name column as the names are too specific to each game. For the other three I used a CountVecotorizer to convert the text data into numerical columns. Each game can have multiple entries in a column (it can have multiple mechanic types, categories, and designers), but each entry is only ever listed once (per game).  The vectorizer turns each column into a distinct bag of words and then creates a column for each word that is a 1 if the game has that mechanic, category, or designer and 0 otherwise. Before the count vectorizer is used, missing data in each text field is changed to be ``Designer Unknown'' for the designer column and so forth. For the designer column, I used a minimum document frequency of 7. In other words, a designer had to be listed on 7 games before he or she was added to the bag of words for that column. This was done so that only designers with some pedigree would be included. A few different numbers were tried for this minimum document frequency, but 7 was found to produce the best results.
 
-Each of the numeric columns (not counting the vectorized text columns) was passed through a sigma clipping function that changed values greater than 3 standard deviations from the mean to be at the edge of that boundary. Finally, they were passed through a MinMax scaler so that each column would be in the range from 0 to 1. This is done so that each feature starts with an equal weight in the models, although it's not necessary for tree-based models. As there are many features after using the count vectorizer, I thought using SVD might be helpful. However, when looking at the explained variance with each component (c.f. Fig. 4) there is no ``elbow'', and thus I decided to not use SVD so as to preserve feature importances/weights in the models.
+Each of the numeric columns (not counting the vectorized text columns) was passed through a sigma clipping function that changed values greater than 3 standard deviations from the mean to be at the edge of that boundary. Finally, they were passed through a MinMax scaler so that each column would be in the range from 0 to 1. This is done so that each feature starts with an equal weight in the models, although it's not necessary for tree-based models. As there are many features after using the count vectorizer, I thought using SVD might be helpful. However, when looking at the explained variance with each component (c.f. Fig. 3) there is no ``elbow'', and thus I decided to not use SVD so as to preserve feature importances/weights in the models.
 
 \begin{figure}[ht]
 \centering
@@ -105,7 +107,7 @@ Each of the numeric columns (not counting the vectorized text columns) was passe
 \section{Modeling}
 I built the steps discussed in \S3 into a pipeline for analysis. The full data set was split into 80-20 train/test partitions twice. The first split was to generate a holdout data set to use for final testing, while the second split was done for the traditional validation purposes. This means that the models were trained on 64\% of the total data set with 16\% used as validation data and 20\% used as holdout data.
 
-A number of different regression models were tested on the training data and validated on the test set, including Random Forest, Elastic Net, Gradient Boosted Tree, K-Neighbors, SVM, and a Neural Network. For each model I did a grid search over relevant hyperparameters. The parameter grid I tried for each model is shown in Table 2.
+A number of different regression models were tested on the training data and validated on the test set, including Random Forest, Elastic Net, Gradient Boosted Tree, K-Neighbors, SVM, and a Neural Network. For each model I did a grid search over relevant hyperparameters, optimizing on RMS error. The parameter grid I tried for each model is shown in Table 2.
 
 \begin{table}[ht]{\small \textbf{Table 2}. Model Parameter Grids} \\
 \centering
@@ -169,11 +171,84 @@ Nodes in 2nd hidden layer & 0, 25, 50 \\
 \end{tabular*}
 \end{table}
 
-
 \section{Results}
+\subsection{Geek Rating}
+The baseline score for the test set (the RMSE using the mean rating as the prediction for all games) is 0.47. The model that produced the best result on the test set was a Random Forest model with min\_samples\_leaf=1, n\_estimators=150, and max\_features=1/3. However, even the best model had a RMSE of 0.40 on the test set and the holdout set. Also, this model had a rather large difference between the scores on the training set and the test set (0.24). Changing the min\_samples\_leaf from 1 to 5 leads to a small decrease in test score (0.005), but a significant reduction in the score difference between the train/test sets (0.068). However, this model still performs about the same on the holdout set. Some of the top features from the RF model include weight, year, name\_len, avg\_time, and age. 
 
+\subsection{Market Price}
+Similar results were found using the market price as the target variable. The baseline RMSE of the test set was \$33.76. The best score attained was stille the RF model with a test score of \$27.77 and a holdout score of \$29.07. The top features were similar to that for the model of game rating, with few features having an importance greater than 0.01, but the top couple feature were stronger overall. Some of these top features are shown plotted against the two target variables in Fig. 4.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{top_features_targets.png}
+\caption{\small \textit Scatter plots of the target variables against some of the top feature from the RF models.}
+\end{figure}
+
+
+\subsection{Conclusions}
+There are several issues with this data set that lead to the models not being that much better than the baseline scores. Many of the features show a trend with the target variable over a small subset of the feature and then a more flat distribution over thes rest of the range of that feature. Take avg\_time, for example (left plot of Fig 5). Games with a lower avg\_time tend to have a lower rating and almost all of the games with low ratings have short average times ($<$60 min). However, for games with an avg\_time longer than 60 minutes, the distribution is flatter and the feature has much less predictive power. The distribution of geek ratings and market prices are both heavily skewed (c.f. Fig. 1 and Fig. 5), which makes predictions tricky. 
+
+\begin{figure}[ht]
+\centering
+\begin{minipage}{.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{market_rating_avgtime.png}
+\end{minipage} \hfill
+\begin{minipage}{.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{market_rating_hist.png}
+\end{minipage}
+\caption{\small \textit{Left}: Geek rating versus average game time (min). \textit{Right}: Geek rating histogram.}
+\end{figure}
+
+Also of interest is the plot of game ID versus release year shown in Figure 6. The game\_id isn't exactly in chronological order of release, but there is a strong correlation. This plot shows that shortly after the year 2000, the board game industry started to explode as many more games were being released per year. This can also be seen in the histogram of release year shown in the right plot of Fig. 1. 
+
+\begin{figure}[ht]
+\centering
+\includegraphics{market_id_year.png}
+\caption{\small \textit Scatter plot of game\_id versus year}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\begin{minipage}{.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{market_rating_avgtime.png}
+\end{minipage} \hfill
+\begin{minipage}{.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{market_rating_hist.png}
+\end{minipage}
+\caption{\small \textit{Left}: Geek rating versus average game time (min). \textit{Right}: Geek rating histogram.}
+\end{figure}
 
 \section{Future Plans}
+\subsection{Classification}
+One thing I'd like to try is to chnage the goal of the project from trying to predict a particular market price or rating for a game to instead predict whether the game will be good or bad (cheap or expensive). This will allow the model to leverage the small regions in parameter space that lead to lower average ratings and prices and not be as hurt by the other regions where the target variables have a more even distribution.
 
+\subsection{Logarithmic Targets}
+One of the problems mentioned in \S5.3 was that the target variables themselves have very skewed distributions. Moving the target variable into log space will reduce the skew of the target distributions and might allow the models to be more predictive.
+
+\subsection{Consider Subsets of Games}
+Using SVD with two components, the data set is separable into two relatively distinct clusters (see Fig. 7). There appears to be a separation along the axis of the second components, with higher average prices in the upper cluster. This is born out by choosing a (somwhat arbitrary) cutoff of 0.2 for the second component and calculating the mean prices for each group. The mean prices of the lower and upper cluster are \$25.26 and \$45.18, respectively. Doing a K-Means clustering analysis with $k=2$ yields the clusters shown in Fig. 9. Of note, some of the top feature weights of the second SVD component ($y$-axis of Fig. 9) have to do with the game category of Wargame and game mechanics that are popular in such games, such as Hex-and-Counter (c.f. https://boardgamegeek.com/boardgamemechanic/2026/hex-and-counter). An interesting analysis might be to separate all the wargames and analyze just those. A similar thought might be to analyze the two clusters found via the K-Means clustering separately, with a majority of the wargames in the upper (and more expensive) cluster. 
+
+\begin{figure}[t]
+\centering
+\begin{minipage}{.49\textwidth}
+\centering
+\includegraphics[width=\textwidth]{svd_price_2d.png}
+\end{minipage} \hfill
+\begin{minipage}{.49\textwidth}
+\centering
+\includegraphics[width=\textwidth]{svd_price_3d.png}
+\end{minipage}
+\caption{\small \textit{Left}: Scatter plot of the top 2 SVD components with market price indicated by color. \textit{Right}: Same as the left plot, but with market price ploted on the $z$ axis in a 3-D plot.}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{svd_clusters.png}
+\caption{\small Clustering from K-Means with $k=2$.}
+\end{figure}
 
 \end{document}
