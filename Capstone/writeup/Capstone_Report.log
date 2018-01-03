@@ -1,0 +1,378 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.11)  19 DEC 2017 21:01
+entering extended mode
+**C:/Users/starm/GA/GA-Work/Capstone/Capstone_Report.tex
+(C:/Users/starm/GA/GA-Work/Capstone/Capstone_Report.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 69 languages loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Users\starm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count88
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen105
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip10
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks17
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks18
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks19
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("C:\Users\starm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
+y"
+Package: caption 2015/09/17 v3.3-111 Customizing captions (AR)
+
+("C:\Users\starm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.s
+ty"
+Package: caption3 2015/09/20 v1.7-115 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen114
+\captionmargin@=\dimen115
+\captionwidth=\dimen116
+\caption@tempdima=\dimen117
+\caption@indent=\dimen118
+\caption@parindent=\dimen119
+\caption@hangindent=\dimen120
+)
+\c@ContinuedFloat=\count101
+)
+("C:\Users\starm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption
+.sty"
+Package: subcaption 2015/09/15 v1.1-100 Sub-captions (AR)
+\c@subfigure=\count102
+\c@subtable=\count103
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip48
+\LTright=\skip49
+\LTpre=\skip50
+\LTpost=\skip51
+\LTchunksize=\count104
+\LTcapwidth=\dimen121
+\LT@head=\box28
+\LT@firsthead=\box29
+\LT@foot=\box30
+\LT@lastfoot=\box31
+\LT@cols=\count105
+\LT@rows=\count106
+\c@LT@tables=\count107
+\c@LT@chunks=\count108
+\LT@p@ftn=\toks21
+)
+("C:\Users\starm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\rotating\rotating.
+sty"
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count109
+\rotFPtop=\skip52
+\rotFPbot=\skip53
+\rot@float@box=\box32
+\rot@mess@toks=\toks22
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count110
+\float@exts=\toks23
+\float@box=\box33
+\@float@everytoks=\toks24
+\@floatcapt=\box34
+)
+(Capstone_Report.aux)
+\openout1 = `Capstone_Report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+
+("C:\Users\starm\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+ii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count111
+\scratchdimen=\dimen122
+\scratchbox=\box35
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen123
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
+\everyMPtoPDFconversion=\toks26
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: longtable package is loaded.
+
+("C:\Users\starm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ltcaption.
+sty"
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 33.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 33.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in alignment at lines 33--62
+[][][]
+ []
+
+[1
+
+{C:/Users/starm/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<market_price_hist.png, id=8, 433.62pt x 289.08pt>
+File: market_price_hist.png Graphic file (type png)
+ <use market_price_hist.png>
+Package pdftex.def Info: market_price_hist.png used on input line 72.
+(pdftex.def)             Requested size: 256.07178pt x 170.71652pt.
+
+Overfull \hbox (30.5914pt too wide) in paragraph at lines 72--73
+ [][] 
+ []
+
+<market_year_hist.png, id=10, 433.62pt x 289.08pt>
+File: market_year_hist.png Graphic file (type png)
+ <use market_year_hist.png>
+Package pdftex.def Info: market_year_hist.png used on input line 77.
+(pdftex.def)             Requested size: 256.07178pt x 170.71652pt.
+
+Overfull \hbox (30.5914pt too wide) in paragraph at lines 77--78
+ [][] 
+ []
+
+[2] <ranked_df_heatmap.png, id=16, 1011.78pt x 722.7pt>
+File: ranked_df_heatmap.png Graphic file (type png)
+
+<use ranked_df_heatmap.png>
+Package pdftex.def Info: ranked_df_heatmap.png used on input line 89.
+(pdftex.def)             Requested size: 569.05511pt x 406.47363pt.
+
+Overfull \hbox (99.30013pt too wide) in paragraph at lines 89--90
+[][] 
+ []
+
+[3 <./market_price_hist.png> <./market_year_hist.png>]
+<market_svd.png, id=23, 433.62pt x 289.08pt>
+File: market_svd.png Graphic file (type png)
+ <use market_svd.png>
+Package pdftex.def Info: market_svd.png used on input line 105.
+(pdftex.def)             Requested size: 284.52756pt x 189.69504pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 110.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 110.
+ [4 <./ranked_df_heatmap.png>]
+Underfull \hbox (badness 10000) in alignment at lines 116--173
+[][]
+ []
+
+<top_features_targets.png, id=29, 1084.05pt x 361.35pt>
+File: top_features_targets.png Graphic file (type png)
+
+<use top_features_targets.png>
+Package pdftex.def Info: top_features_targets.png used on input line 185.
+(pdftex.def)             Requested size: 469.75499pt x 156.58498pt.
+ [5 <./market_svd.png>]
+<market_rating_avgtime.png, id=34, 433.62pt x 289.08pt>
+File: market_rating_avgtime.png Graphic file (type png)
+
+<use market_rating_avgtime.png>
+Package pdftex.def Info: market_rating_avgtime.png used on input line 197.
+(pdftex.def)             Requested size: 225.48038pt x 150.32245pt.
+
+<market_rating_hist.png, id=35, 433.62pt x 289.08pt>
+File: market_rating_hist.png Graphic file (type png)
+
+<use market_rating_hist.png>
+Package pdftex.def Info: market_rating_hist.png used on input line 201.
+(pdftex.def)             Requested size: 225.48038pt x 150.32245pt.
+
+<market_id_year.png, id=36, 419.5675pt x 266.9975pt>
+File: market_id_year.png Graphic file (type png)
+ <use market_id_year.png>
+Package pdftex.def Info: market_id_year.png used on input line 210.
+(pdftex.def)             Requested size: 419.56647pt x 266.99683pt.
+File: market_rating_avgtime.png Graphic file (type png)
+
+<use market_rating_avgtime.png>
+Package pdftex.def Info: market_rating_avgtime.png used on input line 218.
+(pdftex.def)             Requested size: 225.48038pt x 150.32245pt.
+File: market_rating_hist.png Graphic file (type png)
+ <use market_rating_hist.png>
+Package pdftex.def Info: market_rating_hist.png used on input line 222.
+(pdftex.def)             Requested size: 225.48038pt x 150.32245pt.
+ [6 <./top_features_targets.png> <./market_rating_avgtime.png> <./market_rating
+_hist.png>]
+[7 <./market_id_year.png>] <svd_price_2d.png, id=49, 690.58pt x 477.785pt>
+File: svd_price_2d.png Graphic file (type png)
+
+<use svd_price_2d.png>
+Package pdftex.def Info: svd_price_2d.png used on input line 241.
+(pdftex.def)             Requested size: 230.18251pt x 159.25154pt.
+ <svd_price_3d.png, id=50, 426.393pt x 343.2825pt>
+File: svd_price_3d.png Graphic file (type png)
+
+<use svd_price_3d.png>
+Package pdftex.def Info: svd_price_3d.png used on input line 245.
+(pdftex.def)             Requested size: 230.18251pt x 185.31216pt.
+ <svd_clusters.png, id=51, 867.24pt x 578.16pt>
+File: svd_clusters.png Graphic file (type png)
+
+<use svd_clusters.png>
+Package pdftex.def Info: svd_clusters.png used on input line 252.
+(pdftex.def)             Requested size: 469.75499pt x 313.17216pt.
+ [8 <./svd_price_2d.png> <./svd_price_3d.png>] [9 <./svd_clusters.png>] [10] (C
+apstone_Report.aux) ) 
+Here is how much of TeX's memory you used:
+ 3809 strings out of 493634
+ 54505 string characters out of 3141314
+ 118889 words of memory out of 3000000
+ 7155 multiletter control sequences out of 15000+200000
+ 12005 words of font info for 45 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 36i,9n,38p,1260b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.p
+fb>
+Output written on Capstone_Report.pdf (10 pages, 618514 bytes).
+PDF statistics:
+ 90 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+
